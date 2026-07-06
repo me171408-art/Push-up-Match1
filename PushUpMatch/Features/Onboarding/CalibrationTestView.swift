@@ -5,6 +5,7 @@ import UIKit
 @MainActor
 final class CalibrationViewModel: ObservableObject {
     @Published private(set) var repCount = 0
+    @Published private(set) var warning: RepCounterWarning = .none
     @Published private(set) var currentPose: DetectedPose?
 
     let cameraManager = CameraManager()
@@ -21,6 +22,7 @@ final class CalibrationViewModel: ObservableObject {
         }
         cameraManager.delegate = poseDetector
         repCounter.$repCount.assign(to: &$repCount)
+        repCounter.$warning.assign(to: &$warning)
     }
 
     func start(cameraFront: Bool) {
@@ -42,6 +44,7 @@ struct CalibrationTestView: View {
 
     private enum Phase {
         case intro
+        case waitingForPosition
         case testing
         case done
     }
@@ -51,6 +54,12 @@ struct CalibrationTestView: View {
     @State private var phase: Phase = .intro
     @State private var timeLeft = 30
     @State private var timer: Timer?
+    @State private var readyFrames = 0
+
+    // Arms extended in plank ≈ elbow angle near the counter's up threshold.
+    private let plankAngleThreshold: Double = 140
+    // ~0.7 s of consecutive in-position frames at 30 fps before the clock starts.
+    private let requiredReadyFrames = 20
 
     var body: some View {
         ZStack {
@@ -145,24 +154,96 @@ struct CalibrationTestView: View {
                         .shadow(color: .black, radius: 6)
                 }
 
+                if phase == .testing {
+                    formWarning
+                        .padding(.top, 12)
+                }
+
                 Spacer()
 
-                Text("\(vm.repCount)")
-                    .font(.system(size: 96, weight: .black, design: .rounded))
-                    .foregroundStyle(.white)
-                    .contentTransition(.numericText())
-                    .animation(.snappy(duration: 0.2), value: vm.repCount)
-                    .shadow(color: .black, radius: 8)
-                Text("PUSH-UPS")
-                    .font(.caption.bold())
-                    .tracking(2)
-                    .foregroundStyle(.orange)
-                    .padding(.bottom, 40)
+                if phase == .waitingForPosition {
+                    positionPrompt
+                        .padding(.bottom, 40)
+                } else {
+                    Text("\(vm.repCount)")
+                        .font(.system(size: 96, weight: .black, design: .rounded))
+                        .foregroundStyle(.white)
+                        .contentTransition(.numericText())
+                        .animation(.snappy(duration: 0.2), value: vm.repCount)
+                        .shadow(color: .black, radius: 8)
+                    Text("PUSH-UPS")
+                        .font(.caption.bold())
+                        .tracking(2)
+                        .foregroundStyle(.orange)
+                        .padding(.bottom, 40)
+                }
             }
 
             if phase == .done { resultOverlay }
         }
         .background(Color.black)
+        .onReceive(vm.$currentPose) { pose in
+            guard phase == .waitingForPosition else { return }
+            if let angle = pose?.elbowAngle(), angle >= plankAngleThreshold {
+                readyFrames += 1
+                if readyFrames >= requiredReadyFrames { beginCountdown() }
+            } else {
+                readyFrames = 0
+            }
+        }
+    }
+
+    /// Live form feedback during the test, same wording as the match screen.
+    @ViewBuilder
+    private var formWarning: some View {
+        switch vm.warning {
+        case .bodyNotVisible:
+            warningPill("Move back — full body not visible")
+        case .goLower:
+            warningPill("Go lower!")
+        case .none:
+            EmptyView()
+        }
+    }
+
+    private func warningPill(_ text: String) -> some View {
+        Text(text)
+            .font(.subheadline.bold())
+            .foregroundStyle(.white)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 7)
+            .background(.red.opacity(0.85))
+            .clipShape(Capsule())
+            .transition(.opacity)
+    }
+
+    private var positionPrompt: some View {
+        VStack(spacing: 12) {
+            Text("Get into push-up position")
+                .font(.system(size: 26, weight: .black, design: .rounded))
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+                .shadow(color: .black, radius: 6)
+
+            Text("The clock starts automatically")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.white.opacity(0.8))
+                .shadow(color: .black, radius: 4)
+
+            // Fills while the pose is held; resets if the user moves out of position.
+            Capsule()
+                .fill(.white.opacity(0.2))
+                .frame(width: 180, height: 10)
+                .overlay(alignment: .leading) {
+                    Capsule()
+                        .fill(.orange)
+                        .frame(width: 180 * min(1, Double(readyFrames) / Double(requiredReadyFrames)))
+                }
+                .animation(.linear(duration: 0.1), value: readyFrames)
+        }
+        .padding(20)
+        .background(.black.opacity(0.45))
+        .clipShape(RoundedRectangle(cornerRadius: 18))
     }
 
     private var resultOverlay: some View {
@@ -201,7 +282,15 @@ struct CalibrationTestView: View {
 
     private func startTest() {
         vm.start(cameraFront: cameraFront)
+        readyFrames = 0
+        phase = .waitingForPosition
+    }
+
+    /// Fires once the user has held the push-up position long enough.
+    private func beginCountdown() {
+        vm.repCounter.reset()
         SoundManager.shared.play("sfx_kickoff")
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
         phase = .testing
         timeLeft = 30
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in

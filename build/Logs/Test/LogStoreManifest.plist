@@ -6,14 +6,14 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>B2C2AA09-CFC8-4ACA-9C6F-B4440D9135F4</key>
+		<key>0BBAFE9B-AB70-4E7C-A5BF-8EA3C74039A1</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>A0D7D138-691B-46D7-B127-900D0751994D</string>
+			<string>FE2BE820-6F53-4395-B6B3-37F68F4751E8</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -21,7 +21,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.unit.cocoaUnitTest</string>
 			<key>fileName</key>
-			<string>Test-PushUpMatch-2026.07.06_19-29-13-+0300.xcresult</string>
+			<string>Test-PushUpMatch-2026.07.07_00-31-33-+0300.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasCoverageData</key>
@@ -40,9 +40,9 @@
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 				<key>totalCodeCoverage</key>
-				<real>0.095567431625275076</real>
+				<real>0.084385843164469121</real>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -50,7 +50,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>PushUpMatch project</string>
@@ -61,13 +61,76 @@
 			<key>signature</key>
 			<string>Test PushUpMatch</string>
 			<key>timeStartedRecording</key>
-			<real>805048153.57236505</real>
+			<real>805066293.14269698</real>
 			<key>timeStoppedRecording</key>
-			<real>805048184.05463302</real>
+			<real>805066312.92320895</real>
 			<key>title</key>
 			<string>Test PushUpMatch</string>
 			<key>uniqueIdentifier</key>
-			<string>B2C2AA09-CFC8-4ACA-9C6F-B4440D9135F4</string>
+			<string>0BBAFE9B-AB70-4E7C-A5BF-8EA3C74039A1</string>
+		</dict>
+		<key>4491B77B-2251-4676-BAB6-A36E8AB7A103</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>BC94DD26-32FB-486A-8C4C-BADB2D4D19B8</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.unit.cocoaUnitTest</string>
+			<key>fileName</key>
+			<string>Test-PushUpMatch-2026.07.07_00-51-10-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasCoverageData</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalCodeCoverage</key>
+				<real>0.083197167755991286</real>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PushUpMatch project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PushUpMatch</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Test PushUpMatch</string>
+			<key>timeStartedRecording</key>
+			<real>805067470.11520898</real>
+			<key>timeStoppedRecording</key>
+			<real>805067491.77447498</real>
+			<key>title</key>
+			<string>Test PushUpMatch</string>
+			<key>uniqueIdentifier</key>
+			<string>4491B77B-2251-4676-BAB6-A36E8AB7A103</string>
 		</dict>
 	</dict>
 </dict>

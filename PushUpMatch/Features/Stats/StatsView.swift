@@ -80,9 +80,7 @@ struct StatsView: View {
                 let isReached = totalReps >= rank.minReps
 
                 HStack(spacing: 12) {
-                    Image(rank.badgeAsset)
-                        .resizable()
-                        .scaledToFit()
+                    RankBadgeView(rank: rank, size: 38)
                         .frame(width: 44, height: 44)
                         .saturation(isReached ? 1 : 0.15)
                         .opacity(isReached ? 1 : 0.55)

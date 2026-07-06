@@ -40,38 +40,5 @@ extension DeveloperToolsSupport.ImageResource {
     /// The "onboarding_coach3" asset catalog image resource.
     static let onboardingCoach3 = DeveloperToolsSupport.ImageResource(name: "onboarding_coach3", bundle: resourceBundle)
 
-    /// The "rank_bronze" asset catalog image resource.
-    static let rankBronze = DeveloperToolsSupport.ImageResource(name: "rank_bronze", bundle: resourceBundle)
-
-    /// The "rank_champion" asset catalog image resource.
-    static let rankChampion = DeveloperToolsSupport.ImageResource(name: "rank_champion", bundle: resourceBundle)
-
-    /// The "rank_diamond" asset catalog image resource.
-    static let rankDiamond = DeveloperToolsSupport.ImageResource(name: "rank_diamond", bundle: resourceBundle)
-
-    /// The "rank_emerald" asset catalog image resource.
-    static let rankEmerald = DeveloperToolsSupport.ImageResource(name: "rank_emerald", bundle: resourceBundle)
-
-    /// The "rank_gold" asset catalog image resource.
-    static let rankGold = DeveloperToolsSupport.ImageResource(name: "rank_gold", bundle: resourceBundle)
-
-    /// The "rank_iron" asset catalog image resource.
-    static let rankIron = DeveloperToolsSupport.ImageResource(name: "rank_iron", bundle: resourceBundle)
-
-    /// The "rank_legend" asset catalog image resource.
-    static let rankLegend = DeveloperToolsSupport.ImageResource(name: "rank_legend", bundle: resourceBundle)
-
-    /// The "rank_master" asset catalog image resource.
-    static let rankMaster = DeveloperToolsSupport.ImageResource(name: "rank_master", bundle: resourceBundle)
-
-    /// The "rank_platinum" asset catalog image resource.
-    static let rankPlatinum = DeveloperToolsSupport.ImageResource(name: "rank_platinum", bundle: resourceBundle)
-
-    /// The "rank_silver" asset catalog image resource.
-    static let rankSilver = DeveloperToolsSupport.ImageResource(name: "rank_silver", bundle: resourceBundle)
-
-    /// The "rank_steel" asset catalog image resource.
-    static let rankSteel = DeveloperToolsSupport.ImageResource(name: "rank_steel", bundle: resourceBundle)
-
 }
 

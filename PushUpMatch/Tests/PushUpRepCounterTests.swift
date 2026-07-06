@@ -18,7 +18,7 @@ struct PushUpRepCounterTests {
 
     @Test func partialRepNotCounted() {
         let counter = PushUpRepCounter()
-        pump(counter, angle: 110, frames: 5)  // not below 90° threshold
+        pump(counter, angle: 110, frames: 5)  // not below the 110° down threshold
         pump(counter, angle: 165, frames: 5)
         #expect(counter.repCount == 0)
     }
@@ -47,9 +47,9 @@ struct PushUpRepCounterTests {
         #expect(counter.repCount == 0)
     }
 
-    @Test func goLowerWarningBelow120() {
+    @Test func goLowerWarningInBand() {
         let counter = PushUpRepCounter()
-        pump(counter, angle: 115, frames: 5)  // between 90 and 120
+        pump(counter, angle: 115, frames: 5)  // in the 110–130 "go lower" band
         #expect(counter.warning == .goLower)
     }
 

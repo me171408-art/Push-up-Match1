@@ -50,11 +50,8 @@ struct HomeView: View {
 
     private var rankBlock: some View {
         VStack(spacing: 6) {
-            Image(stats.rankEnum.badgeAsset)
-                .resizable()
-                .scaledToFit()
+            RankBadgeView(rank: stats.rankEnum, size: 118)
                 .frame(height: 130)
-                .shadow(color: stats.rankEnum.color.opacity(0.7), radius: 16)
 
             Text(stats.rank.uppercased())
                 .font(.title.bold())
@@ -67,9 +64,7 @@ struct HomeView: View {
                 .padding(.horizontal, 40)
             if let next = stats.rankEnum.next, let left = stats.repsToNextRank {
                 HStack(spacing: 6) {
-                    Image(next.badgeAsset)
-                        .resizable()
-                        .scaledToFit()
+                    RankBadgeView(rank: next, size: 26)
                         .frame(height: 30)
                     Text("\(left) reps to \(next.rawValue)")
                         .font(.caption.bold())
@@ -102,22 +97,6 @@ struct HomeView: View {
 }
 
 extension Rank {
-    var badgeAsset: String {
-        switch self {
-        case .iron:     return "rank_iron"
-        case .steel:    return "rank_steel"
-        case .bronze:   return "rank_bronze"
-        case .silver:   return "rank_silver"
-        case .gold:     return "rank_gold"
-        case .platinum: return "rank_platinum"
-        case .diamond:  return "rank_diamond"
-        case .emerald:  return "rank_emerald"
-        case .master:   return "rank_master"
-        case .champion: return "rank_champion"
-        case .legend:   return "rank_legend"
-        }
-    }
-
     var color: Color {
         switch self {
         case .iron:     return Color(white: 0.6)

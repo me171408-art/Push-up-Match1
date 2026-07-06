@@ -5,25 +5,25 @@ struct RankTests {
 
     @Test func startsAtIron() {
         #expect(Rank.rank(for: 0) == .iron)
-        #expect(Rank.rank(for: 19) == .iron)
+        #expect(Rank.rank(for: 49) == .iron)
     }
 
     @Test func thresholdsPromoteExactlyAtBoundary() {
-        #expect(Rank.rank(for: 20)  == .steel)
-        #expect(Rank.rank(for: 30)  == .bronze)
-        #expect(Rank.rank(for: 40)  == .silver)
-        #expect(Rank.rank(for: 50)  == .gold)
-        #expect(Rank.rank(for: 80)  == .platinum)
-        #expect(Rank.rank(for: 100) == .diamond)
-        #expect(Rank.rank(for: 150) == .emerald)
-        #expect(Rank.rank(for: 200) == .master)
-        #expect(Rank.rank(for: 250) == .champion)
-        #expect(Rank.rank(for: 300) == .legend)
+        #expect(Rank.rank(for: 50)   == .steel)
+        #expect(Rank.rank(for: 75)   == .bronze)
+        #expect(Rank.rank(for: 120)  == .silver)
+        #expect(Rank.rank(for: 200)  == .gold)
+        #expect(Rank.rank(for: 300)  == .platinum)
+        #expect(Rank.rank(for: 500)  == .diamond)
+        #expect(Rank.rank(for: 750)  == .emerald)
+        #expect(Rank.rank(for: 1200) == .master)
+        #expect(Rank.rank(for: 2000) == .champion)
+        #expect(Rank.rank(for: 3000) == .legend)
     }
 
     @Test func oneRepBelowBoundaryStaysDown() {
-        #expect(Rank.rank(for: 49) == .silver)
-        #expect(Rank.rank(for: 299) == .champion)
+        #expect(Rank.rank(for: 199) == .silver)
+        #expect(Rank.rank(for: 2999) == .champion)
     }
 
     @Test func nextRankChainIsComplete() {
@@ -35,6 +35,6 @@ struct RankTests {
     @Test func ranksAreOrdered() {
         #expect(Rank.iron < Rank.steel)
         #expect(Rank.gold < Rank.legend)
-        #expect(Rank.rank(for: 700) >= .gold)
+        #expect(Rank.rank(for: 700) >= .diamond)
     }
 }

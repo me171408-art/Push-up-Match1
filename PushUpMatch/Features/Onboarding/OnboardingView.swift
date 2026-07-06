@@ -46,6 +46,9 @@ struct OnboardingView: View {
                          if let reps {
                              calibrationReps = reps
                              suggestedDifficulty = reps < 10 ? "easy" : (reps < 20 ? "medium" : "hard")
+                         } else {
+                             // Skipped the test — start newcomers on the easiest tier.
+                             suggestedDifficulty = "easy"
                          }
                          advance()
                      }
@@ -665,9 +668,7 @@ struct OnboardingView: View {
 
     private func projectionBadge(_ rank: Rank, days: Int) -> some View {
         VStack(spacing: 6) {
-            Image(rank.badgeAsset)
-                .resizable()
-                .scaledToFit()
+            RankBadgeView(rank: rank, size: 56)
                 .frame(height: 64)
             Text(rank.rawValue)
                 .font(.caption.bold())

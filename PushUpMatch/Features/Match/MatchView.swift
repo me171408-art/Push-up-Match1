@@ -20,6 +20,8 @@ final class MatchViewModel: ObservableObject {
 
     /// How long the player must hold push-up position before kickoff.
     private let readyHoldSeconds: TimeInterval = 1.5
+    /// Arms extended in plank — same gate as the calibration test.
+    private let plankAngleThreshold: Double = 140
 
     init(country: Country) {
         engine = MatchEngine(country: country)
@@ -40,8 +42,8 @@ final class MatchViewModel: ObservableObject {
         currentPose = pose
 
         guard matchStarted else {
-            // Kickoff gate: hold a valid push-up pose (arms visible) briefly.
-            if pose?.elbowAngle() != nil {
+            // Kickoff gate: hold the top of a push-up (arms extended) briefly.
+            if let angle = pose?.elbowAngle(), angle >= plankAngleThreshold {
                 if readySince == nil { readySince = Date() }
                 if let since = readySince, Date().timeIntervalSince(since) >= readyHoldSeconds {
                     beginMatch()
@@ -91,6 +93,20 @@ struct MatchView: View {
     @State private var readyPulse = false
     @State private var showExitConfirm = false
     @State private var forfeited = false
+    @State private var celebrations: [Celebration] = []
+
+    /// Post-match celebration cards, shown one at a time (rank-up first).
+    private enum Celebration: Identifiable {
+        case rankUp(Rank)
+        case achievement(AchievementDef)
+
+        var id: String {
+            switch self {
+            case .rankUp(let rank):       return "rank_\(rank.rawValue)"
+            case .achievement(let def):   return "achievement_\(def.id)"
+            }
+        }
+    }
 
     private var finalUserGoals: Int { forfeited ? 0 : vm.engine.userGoals }
     private var finalOpponentGoals: Int { forfeited ? 3 : vm.engine.opponentGoals }
@@ -129,6 +145,10 @@ struct MatchView: View {
                 scoreboard
                     .padding(.horizontal, 16)
 
+                goalProgressBar
+                    .padding(.horizontal, 16)
+                    .padding(.top, 8)
+
                 if let text = bannerText {
                     banner(text)
                         .padding(.top, 10)
@@ -148,6 +168,20 @@ struct MatchView: View {
             if showUserGoal { goalOverlay(text: "GOAL!", color: .orange) }
             if showOpponentGoal { goalOverlay(text: "\(country.name) scored!", color: .red) }
             if showResult { resultOverlay }
+
+            if let celebration = celebrations.first {
+                Group {
+                    switch celebration {
+                    case .rankUp(let rank):
+                        RankUpCardView(rank: rank) { advanceCelebration() }
+                    case .achievement(let def):
+                        AchievementUnlockedCardView(achievement: def) { advanceCelebration() }
+                    }
+                }
+                .id(celebration.id)
+                .zIndex(10)
+                .transition(.opacity)
+            }
         }
         .background(Color.black)
         .navigationBarHidden(true)
@@ -229,6 +263,37 @@ struct MatchView: View {
         .frame(width: 104)
     }
 
+    /// One segment per rep toward the next goal; fills with each push-up and
+    /// empties when the engine resets the counter after a goal.
+    private var goalProgressBar: some View {
+        HStack(spacing: 8) {
+            HStack(spacing: 4) {
+                ForEach(0..<vm.engine.repsPerGoal, id: \.self) { index in
+                    Capsule()
+                        .fill(index < vm.engine.repsTowardNextGoal
+                              ? AnyShapeStyle(
+                                    LinearGradient(colors: [.yellow, .orange],
+                                                   startPoint: .top, endPoint: .bottom))
+                              : AnyShapeStyle(Color.white.opacity(0.22)))
+                        .frame(height: 12)
+                        .shadow(color: index < vm.engine.repsTowardNextGoal
+                                ? .orange.opacity(0.7) : .clear,
+                                radius: 4)
+                }
+            }
+
+            Text("⚽")
+                .font(.system(size: 20))
+                .opacity(vm.engine.repsTowardNextGoal >= vm.engine.repsPerGoal - 1 ? 1 : 0.45)
+                .scaleEffect(vm.engine.repsTowardNextGoal >= vm.engine.repsPerGoal - 1 ? 1.2 : 1)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(.black.opacity(0.55))
+        .clipShape(Capsule())
+        .animation(.snappy(duration: 0.3), value: vm.engine.repsTowardNextGoal)
+    }
+
     private func banner(_ text: String) -> some View {
         Text(text)
             .font(.subheadline.bold())
@@ -287,14 +352,15 @@ struct MatchView: View {
         }
     }
 
-    /// Gold coin showing progress toward the next goal (e.g. 7/10).
+    /// Translucent coin showing progress toward the next goal (e.g. 7/10) —
+    /// keeps the camera view visible behind it.
     private var repProgressCoin: some View {
         ZStack {
             Circle()
                 .fill(
                     LinearGradient(
-                        colors: [Color(red: 0.98, green: 0.80, blue: 0.30),
-                                 Color(red: 0.83, green: 0.58, blue: 0.10)],
+                        colors: [Color(red: 0.98, green: 0.80, blue: 0.30).opacity(0.30),
+                                 Color(red: 0.83, green: 0.58, blue: 0.10).opacity(0.30)],
                         startPoint: .top,
                         endPoint: .bottom
                     )
@@ -302,7 +368,7 @@ struct MatchView: View {
 
             Circle()
                 .trim(from: 0, to: Double(vm.engine.repsTowardNextGoal) / Double(vm.engine.repsPerGoal))
-                .stroke(Color(red: 0.10, green: 0.16, blue: 0.32), style: StrokeStyle(lineWidth: 6, lineCap: .round))
+                .stroke(.orange, style: StrokeStyle(lineWidth: 6, lineCap: .round))
                 .rotationEffect(.degrees(-90))
                 .padding(7)
                 .animation(.snappy(duration: 0.25), value: vm.engine.repsTowardNextGoal)
@@ -315,10 +381,10 @@ struct MatchView: View {
                 Text("/ \(vm.engine.repsPerGoal)")
                     .font(.system(size: 15, weight: .bold, design: .rounded))
             }
-            .foregroundStyle(Color(red: 0.10, green: 0.16, blue: 0.32))
+            .foregroundStyle(.white)
+            .shadow(color: .black.opacity(0.8), radius: 4, y: 1)
         }
         .frame(width: 120, height: 120)
-        .shadow(color: .black.opacity(0.45), radius: 8, y: 4)
     }
 
     // MARK: – Warnings
@@ -465,8 +531,26 @@ struct MatchView: View {
     // MARK: – Persistence
 
     private func saveAndDismiss() {
-        persistMatch(won: didWin, userGoals: finalUserGoals, opponentGoals: finalOpponentGoals)
-        dismiss()
+        let (rankUp, achievements) = persistMatch(won: didWin, userGoals: finalUserGoals, opponentGoals: finalOpponentGoals)
+        var queue: [Celebration] = []
+        if let rankUp { queue.append(.rankUp(rankUp)) }
+        queue.append(contentsOf: achievements.map { .achievement($0) })
+
+        if queue.isEmpty {
+            dismiss()
+        } else {
+            withAnimation(.easeInOut(duration: 0.4)) { celebrations = queue }
+        }
+    }
+
+    private func advanceCelebration() {
+        if celebrations.count <= 1 {
+            dismiss()
+        } else {
+            withAnimation(.easeInOut(duration: 0.4)) {
+                celebrations.removeFirst()
+            }
+        }
     }
 
     /// Quitting mid-match is a forfeit: a fixed 3-0 defeat, shown on the result
@@ -484,10 +568,13 @@ struct MatchView: View {
         withAnimation { showResult = true }
     }
 
-    private func persistMatch(won: Bool, userGoals: Int, opponentGoals: Int) {
+    /// Returns the new rank when this match crossed a threshold, plus any
+    /// achievements unlocked by it.
+    private func persistMatch(won: Bool, userGoals: Int, opponentGoals: Int) -> (Rank?, [AchievementDef]) {
         let stats = allStats.first ?? {
             let s = PlayerStats(); modelContext.insert(s); return s
         }()
+        let oldRank = Rank.rank(for: stats.totalReps)
         stats.totalReps += vm.engine.reps
         stats.totalXP   += vm.engine.reps * xpPerRep
         if vm.engine.reps > stats.bestSession {
@@ -505,5 +592,10 @@ struct MatchView: View {
         )
         modelContext.insert(record)
         try? modelContext.save()
+
+        let newRank = Rank.rank(for: stats.totalReps)
+        let records = (try? modelContext.fetch(FetchDescriptor<MatchRecord>())) ?? []
+        let unlocked = Achievements.registerNewUnlocks(stats: stats, records: records)
+        return (newRank > oldRank ? newRank : nil, unlocked)
     }
 }

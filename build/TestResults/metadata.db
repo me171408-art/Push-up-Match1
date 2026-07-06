@@ -238,97 +238,97 @@
 				<key>easyRubberBandingIsAggressiveWhenUserLeads</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.013833045959472656</real>
+					<real>0.022222995758056641</real>
 				</dict>
 				<key>eightRepsScoreOneGoalOnMedium</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.041754007339477539</real>
+					<real>0.021697044372558594</real>
 				</dict>
 				<key>finalPhaseTriggersInLastFifteenSeconds</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.041619062423706055</real>
+					<real>0.01288294792175293</real>
 				</dict>
 				<key>fiveRepsScoreOneGoalOnEasy</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0043368339538574219</real>
+					<real>0.022025108337402344</real>
 				</dict>
 				<key>goalsDoNotEndTimedMatchEarly</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.053325176239013672</real>
+					<real>0.012861967086791992</real>
 				</dict>
 				<key>goldenGoalByOpponentLosesInstantly</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.041311025619506836</real>
+					<real>0.027588129043579102</real>
 				</dict>
 				<key>goldenGoalByUserWinsInstantly</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.04127812385559082</real>
+					<real>0.022136926651000977</real>
 				</dict>
 				<key>hardDifficultyDisablesRubberBanding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.013650894165039062</real>
+					<real>0.022174835205078125</real>
 				</dict>
 				<key>intervalStaysWithinExpectedBounds</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.013868093490600586</real>
+					<real>0.021966934204101562</real>
 				</dict>
 				<key>leaderWinsAtFullTime</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.041958093643188477</real>
+					<real>0.021977901458740234</real>
 				</dict>
 				<key>noScoringAfterMatchOver</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.013668060302734375</real>
+					<real>0.021896839141845703</real>
 				</dict>
 				<key>noScoringBeforeStart</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.041579008102416992</real>
+					<real>0.022007942199707031</real>
 				</dict>
 				<key>opponentLeadWinsAtFullTime</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.050881147384643555</real>
+					<real>0.02206110954284668</real>
 				</dict>
 				<key>opponentSlowsDownWhenUserTrails</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.050857067108154297</real>
+					<real>0.027559041976928711</real>
 				</dict>
 				<key>opponentSpeedsUpWhenUserLeads</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.041507959365844727</real>
+					<real>0.021893024444580078</real>
 				</dict>
 				<key>partialProgressDoesNotScore</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.041378021240234375</real>
+					<real>0.022180080413818359</real>
 				</dict>
 				<key>scoreDiffInfluenceIsCapped</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0087900161743164062</real>
+					<real>0.021847963333129883</real>
 				</dict>
 				<key>tieAtFullTimeGoesToGoldenGoal</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0042719841003417969</real>
+					<real>0.021955013275146484</real>
 				</dict>
 				<key>twelveRepsScoreOneGoalOnHard</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.041505098342895508</real>
+					<real>0.022148847579956055</real>
 				</dict>
 			</dict>
 			<key>PushUpRepCounterTests</key>
@@ -336,37 +336,42 @@
 				<key>goLowerWarningBelow120</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.014055013656616211</real>
+					<real>0.0046689510345458984</real>
+				</dict>
+				<key>goLowerWarningInBand</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.019919157028198242</real>
 				</dict>
 				<key>missingPoseSetsWarning</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.014196157455444336</real>
+					<real>0.019906997680664062</real>
 				</dict>
 				<key>multipleRepsCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.051412820816040039</real>
+					<real>0.019876956939697266</real>
 				</dict>
 				<key>oneFullRep</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.051606893539428711</real>
+					<real>0.019894838333129883</real>
 				</dict>
 				<key>partialRepNotCounted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.011745929718017578</real>
+					<real>0.036874055862426758</real>
 				</dict>
 				<key>resetClearsAll</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.011965036392211914</real>
+					<real>0.01987004280090332</real>
 				</dict>
 				<key>singleFrameAtBottomNotCounted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.011693954467773438</real>
+					<real>0.019865989685058594</real>
 				</dict>
 			</dict>
 			<key>RankTests</key>
@@ -374,27 +379,27 @@
 				<key>nextRankChainIsComplete</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.010207891464233398</real>
+					<real>0.015393972396850586</real>
 				</dict>
 				<key>oneRepBelowBoundaryStaysDown</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.010422945022583008</real>
+					<real>0.015365839004516602</real>
 				</dict>
 				<key>ranksAreOrdered</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.010163784027099609</real>
+					<real>0.015339136123657227</real>
 				</dict>
 				<key>startsAtIron</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.010241031646728516</real>
+					<real>0.01538395881652832</real>
 				</dict>
 				<key>thresholdsPromoteExactlyAtBoundary</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.010097980499267578</real>
+					<real>0.015292882919311523</real>
 				</dict>
 			</dict>
 		</dict>

@@ -1,7 +1,7 @@
 import Foundation
 
-/// Lifetime push-up rank ladder. Thresholds are quick early wins that ramp up
-/// toward Legend at 300 lifetime push-ups.
+/// Lifetime push-up rank ladder. Thresholds ramp roughly geometrically from
+/// Iron at 30 toward Legend at 3000 lifetime push-ups.
 enum Rank: String, CaseIterable {
     case iron     = "Iron"
     case steel    = "Steel"
@@ -17,17 +17,17 @@ enum Rank: String, CaseIterable {
 
     var minReps: Int {
         switch self {
-        case .iron:     return 10
-        case .steel:    return 20
-        case .bronze:   return 30
-        case .silver:   return 40
-        case .gold:     return 50
-        case .platinum: return 80
-        case .diamond:  return 100
-        case .emerald:  return 150
-        case .master:   return 200
-        case .champion: return 250
-        case .legend:   return 300
+        case .iron:     return 30
+        case .steel:    return 50
+        case .bronze:   return 75
+        case .silver:   return 120
+        case .gold:     return 200
+        case .platinum: return 300
+        case .diamond:  return 500
+        case .emerald:  return 750
+        case .master:   return 1200
+        case .champion: return 2000
+        case .legend:   return 3000
         }
     }
 

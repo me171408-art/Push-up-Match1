@@ -6,7 +6,7 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>161AF763-75BF-491F-99EB-C226B2FBAB31</key>
+		<key>BC94DD26-32FB-486A-8C4C-BADB2D4D19B8</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,13 +15,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>161AF763-75BF-491F-99EB-C226B2FBAB31.xcactivitylog</string>
+			<string>BC94DD26-32FB-486A-8C4C-BADB2D4D19B8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -29,7 +29,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>PushUpMatch project</string>
@@ -38,17 +38,17 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project PushUpMatch with scheme PushUpMatch</string>
+			<string>Testing project PushUpMatch with scheme PushUpMatch</string>
 			<key>timeStartedRecording</key>
-			<real>805048685.74481905</real>
+			<real>805067470.11481404</real>
 			<key>timeStoppedRecording</key>
-			<real>805048688.77784503</real>
+			<real>805067474.41870105</real>
 			<key>title</key>
-			<string>Building project PushUpMatch with scheme PushUpMatch</string>
+			<string>Testing project PushUpMatch with scheme PushUpMatch</string>
 			<key>uniqueIdentifier</key>
-			<string>161AF763-75BF-491F-99EB-C226B2FBAB31</string>
+			<string>BC94DD26-32FB-486A-8C4C-BADB2D4D19B8</string>
 		</dict>
-		<key>A0D7D138-691B-46D7-B127-900D0751994D</key>
+		<key>FE2BE820-6F53-4395-B6B3-37F68F4751E8</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,13 +57,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A0D7D138-691B-46D7-B127-900D0751994D.xcactivitylog</string>
+			<string>FE2BE820-6F53-4395-B6B3-37F68F4751E8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -71,7 +71,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>PushUpMatch project</string>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Testing project PushUpMatch with scheme PushUpMatch</string>
 			<key>timeStartedRecording</key>
-			<real>805048153.57198298</real>
+			<real>805066293.14223897</real>
 			<key>timeStoppedRecording</key>
-			<real>805048156.90525198</real>
+			<real>805066296.94089198</real>
 			<key>title</key>
 			<string>Testing project PushUpMatch with scheme PushUpMatch</string>
 			<key>uniqueIdentifier</key>
-			<string>A0D7D138-691B-46D7-B127-900D0751994D</string>
+			<string>FE2BE820-6F53-4395-B6B3-37F68F4751E8</string>
 		</dict>
 	</dict>
 </dict>
