@@ -1,0 +1,23 @@
+{
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/ContentView.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/ContentView.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/ContentView.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/Core/GameEngine/Country.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/Country.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/Country.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/Country.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/Country.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/Country.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/Features/Match/CameraPreviewView.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraPreviewView.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraPreviewView.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraPreviewView.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraPreviewView.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraPreviewView.swiftdeps"
+  }
+}

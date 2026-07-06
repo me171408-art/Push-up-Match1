@@ -1,0 +1,23 @@
+{
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Core/Auth/AuthManager.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AuthManager.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AuthManager.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AuthManager.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AuthManager.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AuthManager.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Features/Achievements/AchievementsView.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AchievementsView.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AchievementsView.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AchievementsView.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AchievementsView.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/AchievementsView.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Features/Onboarding/CalibrationTestView.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/CalibrationTestView.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/CalibrationTestView.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/CalibrationTestView.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/CalibrationTestView.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/CalibrationTestView.swiftdeps"
+  }
+}

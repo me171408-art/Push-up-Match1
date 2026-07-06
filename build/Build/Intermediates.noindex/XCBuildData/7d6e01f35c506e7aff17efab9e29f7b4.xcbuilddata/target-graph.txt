@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'PushUpMatchTests' in project 'PushUpMatch'
+➜ Explicit dependency on target 'PushUpMatch' in project 'PushUpMatch'
+Target 'PushUpMatch' in project 'PushUpMatch' (no dependencies)

@@ -1,0 +1,39 @@
+{
+  "" : {
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushBossTests-primary.dia",
+    "emit-module-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushBossTests-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushBossTests-primary-emit-module.dia",
+    "pch" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushBossTests-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushBossTests-primary.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/Tests/MatchEngineTests.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/MatchEngineTests.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/MatchEngineTests.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/MatchEngineTests.dia",
+    "index-unit-output-path" : "/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/MatchEngineTests.o",
+    "llvm-bc" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/MatchEngineTests.bc",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/MatchEngineTests.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/MatchEngineTests.swiftdeps",
+    "swiftmodule" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/MatchEngineTests~partial.swiftmodule"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/Tests/PushUpRepCounterTests.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushUpRepCounterTests.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushUpRepCounterTests.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushUpRepCounterTests.dia",
+    "index-unit-output-path" : "/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushUpRepCounterTests.o",
+    "llvm-bc" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushUpRepCounterTests.bc",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushUpRepCounterTests.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushUpRepCounterTests.swiftdeps",
+    "swiftmodule" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/PushUpRepCounterTests~partial.swiftmodule"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/Tests/RankTests.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/RankTests.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/RankTests.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/RankTests.dia",
+    "index-unit-output-path" : "/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/RankTests.o",
+    "llvm-bc" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/RankTests.bc",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/RankTests.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/RankTests.swiftdeps",
+    "swiftmodule" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphonesimulator/PushBossTests.build/Objects-normal/arm64/RankTests~partial.swiftmodule"
+  }
+}

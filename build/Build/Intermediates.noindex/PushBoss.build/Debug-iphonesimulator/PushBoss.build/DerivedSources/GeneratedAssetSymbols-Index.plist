@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameAccentColor</string>
+			<key>relativePath</key>
+			<string>./AccentColor.colorset</string>
+			<key>swiftSymbol</key>
+			<string>accent</string>
+		</dict>
+	</array>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppLogo</string>
+			<key>relativePath</key>
+			<string>./app_logo.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appLogo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameOnboardingBg</string>
+			<key>relativePath</key>
+			<string>./onboarding_bg.imageset</string>
+			<key>swiftSymbol</key>
+			<string>onboardingBg</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameOnboardingCoach</string>
+			<key>relativePath</key>
+			<string>./onboarding_coach.imageset</string>
+			<key>swiftSymbol</key>
+			<string>onboardingCoach</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameOnboardingCoach2</string>
+			<key>relativePath</key>
+			<string>./onboarding_coach2.imageset</string>
+			<key>swiftSymbol</key>
+			<string>onboardingCoach2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameOnboardingCoach3</string>
+			<key>relativePath</key>
+			<string>./onboarding_coach3.imageset</string>
+			<key>swiftSymbol</key>
+			<string>onboardingCoach3</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankBronze</string>
+			<key>relativePath</key>
+			<string>./rank_bronze.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankBronze</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankChampion</string>
+			<key>relativePath</key>
+			<string>./rank_champion.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankChampion</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankDiamond</string>
+			<key>relativePath</key>
+			<string>./rank_diamond.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankDiamond</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankEmerald</string>
+			<key>relativePath</key>
+			<string>./rank_emerald.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankEmerald</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankGold</string>
+			<key>relativePath</key>
+			<string>./rank_gold.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankGold</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankIron</string>
+			<key>relativePath</key>
+			<string>./rank_iron.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankIron</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankLegend</string>
+			<key>relativePath</key>
+			<string>./rank_legend.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankLegend</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankMaster</string>
+			<key>relativePath</key>
+			<string>./rank_master.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankMaster</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankPlatinum</string>
+			<key>relativePath</key>
+			<string>./rank_platinum.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankPlatinum</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankSilver</string>
+			<key>relativePath</key>
+			<string>./rank_silver.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankSilver</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/sahabettinadiyaman/Documents/Push Up Match/PushBoss/Resources/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRankSteel</string>
+			<key>relativePath</key>
+			<string>./rank_steel.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rankSteel</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

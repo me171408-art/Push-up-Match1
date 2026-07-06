@@ -1,0 +1,23 @@
+{
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Core/Notifications/NotificationManager.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/NotificationManager.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/NotificationManager.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/NotificationManager.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/NotificationManager.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/NotificationManager.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Core/Persistence/Models.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/Models.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/Models.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/Models.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/Models.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/Models.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Features/Match/MyCountryPickerView.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MyCountryPickerView.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MyCountryPickerView.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MyCountryPickerView.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MyCountryPickerView.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MyCountryPickerView.swiftdeps"
+  }
+}

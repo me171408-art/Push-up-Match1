@@ -1,0 +1,23 @@
+{
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Core/GameEngine/MatchEngine.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchEngine.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchEngine.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchEngine.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchEngine.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchEngine.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Features/Home/HomeView.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/HomeView.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/HomeView.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Match/PushUpMatch/Features/Match/MatchView.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchView.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchView.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchView.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchView.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Match/build/Build/Intermediates.noindex/PushUpMatch.build/Debug-iphonesimulator/PushUpMatch.build/Objects-normal/arm64/MatchView.swiftdeps"
+  }
+}

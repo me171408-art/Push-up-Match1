@@ -1,0 +1,23 @@
+{
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/Core/Auth/AuthManager.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AuthManager.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AuthManager.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AuthManager.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AuthManager.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AuthManager.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/Core/PoseTracking/CameraManager.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraManager.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraManager.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraManager.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraManager.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/CameraManager.swiftdeps"
+  },
+  "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/PushBoss/Features/Achievements/AchievementsView.swift" : {
+    "const-values" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AchievementsView.swiftconstvalues",
+    "dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AchievementsView.d",
+    "diagnostics" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AchievementsView.dia",
+    "object" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AchievementsView.o",
+    "swift-dependencies" : "/Users/sahabettinadiyaman/Documents/Push Up Boss Arena/build/Build/Intermediates.noindex/PushBoss.build/Debug-iphoneos/PushBoss.build/Objects-normal/arm64/AchievementsView.swiftdeps"
+  }
+}
