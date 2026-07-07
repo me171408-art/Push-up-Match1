@@ -37,6 +37,12 @@ final class PushUpRepCounter: ObservableObject {
         warning = .none
     }
 
+    func injectRep() {
+        repCount += 1
+        state = .waitingForDown
+        angleHistory = []
+    }
+
     func process(pose: DetectedPose?) {
         guard let pose else { warning = .bodyNotVisible; return }
         // Hips are deliberately NOT required: with the phone on the floor they sit

@@ -16,6 +16,7 @@
 		1ECC70BA7257581DBFA12DAA /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45407C7749433CA8C12164ED /* PaywallView.swift */; };
 		1F02FB573F434DC833FF1E51 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D650114F440F488308B6825B /* Vision.framework */; };
 		236F7711D865D0B985F3B848 /* AchievementUnlockedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C304AE5B33A828F6CA5DD /* AchievementUnlockedCardView.swift */; };
+		A1B2C3D4E5F60718293A4B5C /* FUTCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6071829A3B4C5D6 /* FUTCardView.swift */; };
 		26343CC92224B39F84D9E387 /* SkeletonOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BAB52094AE89F98AFD68D /* SkeletonOverlayView.swift */; };
 		28AEDBF1FDCBC9C1D62E77B3 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DDCEC15C160BBD254AD463 /* StatsView.swift */; };
 		2E9B6B548EF8F45BE52D286B /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367F60A07D6758F0D86DD67 /* Achievements.swift */; };
@@ -62,8 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		072569D55874FA98F833D2E8 /* PushUpMatchTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PushUpMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0885FFBE6B9C251FBDB75813 /* PushUpMatch.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PushUpMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		072569D55874FA98F833D2E8 /* PushUpMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushUpMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0885FFBE6B9C251FBDB75813 /* PushUpMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushUpMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B684EF2B3A0856AE729C377 /* CountrySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectView.swift; sourceTree = "<group>"; };
 		109CF5B53EB4F92ACC5F4CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1554902FD6437CBA7DD722A9 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 		F8CC79FB08D068230062AC31 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		F8E530553223924570061774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC1C304AE5B33A828F6CA5DD /* AchievementUnlockedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementUnlockedCardView.swift; sourceTree = "<group>"; };
+		B2C3D4E5F6071829A3B4C5D6 /* FUTCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUTCardView.swift; sourceTree = "<group>"; };
 		FF14B5AECD6A83C378303061 /* RankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				FC1C304AE5B33A828F6CA5DD /* AchievementUnlockedCardView.swift */,
+				B2C3D4E5F6071829A3B4C5D6 /* FUTCardView.swift */,
 				683CD425757637E2F967E564 /* RankBadgeView.swift */,
 				AAB66FE17F9DFA291C4DE40E /* RankUpCardView.swift */,
 			);
@@ -402,11 +405,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					900F42B8F5C9F6F27CCC0B03 = {
-						DevelopmentTeam = WHCYV6XT76;
 						ProvisioningStyle = Automatic;
 					};
 					A059F1CF04A6B9F167F75429 = {
-						DevelopmentTeam = WHCYV6XT76;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -465,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				236F7711D865D0B985F3B848 /* AchievementUnlockedCardView.swift in Sources */,
+				A1B2C3D4E5F60718293A4B5C /* FUTCardView.swift in Sources */,
 				2E9B6B548EF8F45BE52D286B /* Achievements.swift in Sources */,
 				4D08200DEBF044890CCB2103 /* AchievementsView.swift in Sources */,
 				98714F50B0391DE73A3251CF /* AuthManager.swift in Sources */,
@@ -513,6 +515,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PushUpMatch/PushUpMatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JHZMZ4RN44;
 				INFOPLIST_FILE = PushUpMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JHZMZ4RN44;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,6 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PushUpMatch/PushUpMatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JHZMZ4RN44;
 				INFOPLIST_FILE = PushUpMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -615,7 +620,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sahabettinadiyaman.pushupmatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.firatyildizhan.pushupmatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -678,7 +683,7 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sahabettinadiyaman.pushupmatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.firatyildizhan.pushupmatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -692,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JHZMZ4RN44;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

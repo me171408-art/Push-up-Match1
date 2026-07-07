@@ -7,6 +7,8 @@ enum MatchEvent: Equatable {
     case finalPhase
     case goldenGoal
     case matchOver(won: Bool)
+    case yellowCard
+    case redCard
 }
 
 /// Timed match (default 90 seconds). Most goals when the clock hits zero wins;
@@ -22,12 +24,15 @@ final class MatchEngine: ObservableObject {
     @Published private(set) var userGoals = 0
     @Published private(set) var opponentGoals = 0
     @Published private(set) var timeRemaining: Int
+    @Published private(set) var goalAttemptSeconds: Int = 0
     @Published private(set) var hasStarted = false
     @Published private(set) var isMatchOver = false
     @Published private(set) var userWon = false
     @Published private(set) var isFinalPhase = false
     @Published private(set) var isGoldenGoal = false
     @Published private(set) var lastEvent: MatchEvent?
+
+    private var yellowCardShown = false
 
     /// Final-phase warning kicks in with this many seconds left.
     private let finalPhaseThreshold = 15
@@ -86,11 +91,30 @@ final class MatchEngine: ObservableObject {
             if userGoals == opponentGoals {
                 isGoldenGoal = true
                 lastEvent = .goldenGoal
-                // Opponent timer keeps running: either side's next goal ends it.
             } else {
                 finish()
             }
+            return
         }
+
+        // Card system: track time elapsed on the current goal attempt.
+        goalAttemptSeconds += 1
+        let limit = country.difficulty.goalTimeLimit
+        let yellowAt = country.difficulty.yellowCardThreshold
+
+        if !yellowCardShown && goalAttemptSeconds >= yellowAt {
+            yellowCardShown = true
+            lastEvent = .yellowCard
+        } else if goalAttemptSeconds >= limit {
+            lastEvent = .redCard
+            if userGoals > 0 { userGoals -= 1 }
+            resetGoalAttempt()
+        }
+    }
+
+    private func resetGoalAttempt() {
+        goalAttemptSeconds = 0
+        yellowCardShown = false
     }
 
     // MARK: – User side
@@ -101,6 +125,7 @@ final class MatchEngine: ObservableObject {
         if reps % repsPerGoal == 0 {
             userGoals += 1
             lastEvent = .userGoal(score: userGoals)
+            resetGoalAttempt()
             handleScoreChange(opponentScored: false)
         }
     }
@@ -112,6 +137,7 @@ final class MatchEngine: ObservableObject {
         guard hasStarted, !isMatchOver else { return }
         opponentGoals += 1
         lastEvent = .opponentGoal(score: opponentGoals)
+        resetGoalAttempt()
         handleScoreChange(opponentScored: true)
     }
 
@@ -151,6 +177,13 @@ final class MatchEngine: ObservableObject {
             // could postpone the opponent's goal forever.
             rebalanceOpponentSchedule()
         }
+    }
+
+    func forceEnd() {
+        guard hasStarted, !isMatchOver else { return }
+        userGoals = Int.random(in: 0...4)
+        opponentGoals = Int.random(in: 0...4)
+        finish()
     }
 
     private func finish() {
