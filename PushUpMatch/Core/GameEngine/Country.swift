@@ -28,6 +28,18 @@ enum Difficulty: String, CaseIterable, Identifiable {
         }
     }
 
+    /// Seconds the player has to complete a goal attempt before a card is issued.
+    var goalTimeLimit: Int {
+        switch self {
+        case .easy:   return 30
+        case .medium: return 40
+        case .hard:   return 50
+        }
+    }
+
+    /// Seconds elapsed before a yellow card warning is shown (half of limit).
+    var yellowCardThreshold: Int { goalTimeLimit / 2 }
+
     /// Average seconds between opponent goals (constant across difficulties).
     var baseGoalInterval: TimeInterval { 30 }
 
